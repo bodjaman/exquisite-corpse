@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exquisite Corpse</title>
+  </head>
+  <body>
+    <header>
+      <div class="links">
+        <span class="wiki-link"
+          ><a
+            href="https://en.wikipedia.org/wiki/Exquisite_corpse"
+            target="_blank"
+            >About this game</a
+          ></span
+        >
+        <a href="https://github.com/bodjaman/exquisite-corpse" target="_blank"
+          ><img src="images/icon-github.png" class="icons"
+        /></a>
+      </div>
+      <h1>Exquisite Corpse</h1>
+    </header>
+
+    <section id="main">
+      <div class="rules">
+        <h2>How to play:</h2>
+        <p>
+          1) Type a sentence of more than 3 words – don't let anyone see!
+        </p>
+        <p>
+          2) Click submit. A fragment of your sentence will be revealed – now
+          hand over to the next player
+        </p>
+        <p>3) Click <i>c’est fin!</i> when you’re all done</p>
+      </div>
+      <div id="in-out">
+        <form id="userLine" name="userLine" action="">
+          <input
+            type="text"
+            id="line"
+            name="line"
+            placeholder="Type your sentence here"
+          />
+          <input
+            type="button"
+            id="submit"
+            name="submit"
+            value="submit"
+            onclick="submitLine()"
+          />
+        </form>
+
+        <p id="lines"></p>
+
+        <button id="show" name="show" onclick="showFull()">c'est fin!</button>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
