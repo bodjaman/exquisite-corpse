@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Lemonada:wght@400;600&display=swap");
 
 body {
-  font-family: "Inconsolata", sans-serif;
-  background-image: url("https://wallpapercave.com/wp/IXvB1uS.jpg");
+  font-family: "Lemonada", sans-serif;
+  background-image: url(./images/clouds.png);
   background-size: cover;
   color: #1d201f;
   margin: 0;
@@ -10,12 +10,13 @@ body {
 }
 
 header {
-  height: 30vh;
+  height: 25vh;
   padding: 10px;
 }
 
 .links {
   height: 20px;
+  font-family: "Inconsolata", sans-serif;
 }
 
 .wiki-link {
@@ -30,7 +31,7 @@ h1 {
   margin: 0;
   padding: 0.3em;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 2.5rem;
   color: #1d345f;
 }
 
@@ -40,7 +41,8 @@ h2 {
 }
 
 #main {
-  width: 40vw;
+  font-family: "Inconsolata", sans-serif;
+  width: 600px;
   border-radius: 10px;
   padding: 20px;
   margin: auto;
@@ -102,4 +104,24 @@ h2 {
 
 #show:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  #main {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #main {
+    width: 250px;
+  }
+
+  header {
+    height: 18vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
